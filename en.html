@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · FarSights</title>
+<meta name="description" content="What data the FarSights app uses, why, and who it is shared with.">
+<link rel="alternate" hreflang="es" href="./">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="lang"><a href="./" hreflang="es">Español</a></p>
+
+<h1>FarSights privacy policy</h1>
+<p class="meta">Last updated: 6 October 2026</p>
+
+<p>FarSights is an app to see, save and reach places in the mountains. This policy explains what data it uses, why, and who it is shared with.</p>
+
+<p class="summary"><strong>In short:</strong> FarSights has no accounts, no servers of its own and no ads. Your places and tracks stay on your phone. To work, the app queries map, terrain and peak services, and some of those requests reveal the area where you are. It sends anonymous crash reports and, only if you agree, anonymous usage statistics.</p>
+
+<h2>Controller</h2>
+<p>The data controller is the developer of FarSights. Contact: <a href="mailto:madelatosoftware@gmail.com">madelatosoftware@gmail.com</a>.</p>
+
+<h2>Data that stays on your phone</h2>
+<ul>
+<li><strong>Your places, categories, tracks, recordings and offline areas.</strong> They are stored in the app's storage. FarSights does not send them to any server.</li>
+<li><strong>Settings</strong>: language, map layers, horizon and route preferences.</li>
+<li><strong>Android backup.</strong> If Google account backup is on, Android may include your places, tracks, recordings and settings in it (encrypted, in your account) so they come back on a new phone. Offline areas are not backed up. The backup is made by the system, not by FarSights, and you can turn it off in Android settings.</li>
+<li><strong>If you uninstall the app</strong>, everything is deleted from the phone.</li>
+</ul>
+
+<h2>Location</h2>
+<ul>
+<li>The app uses your location to work out the distance and direction to your places, draw the horizon from where you stand, guide you and record routes.</li>
+<li><strong>In the background</strong> (Android only): only while you record or follow a route that you started. Android shows an ongoing notification meanwhile.</li>
+<li>FarSights has no servers of its own, so your location is not stored outside your phone. But to work, the app requests data from the external services in the table below, and some of those requests reveal where you are:
+  <ul>
+  <li><strong>Horizon:</strong> when you open it, the app sends the coordinates of your position to OpenStreetMap (Overpass servers) to get the surrounding peaks. The result is kept on the phone for 30 days, so it is not repeated every time.</li>
+  <li><strong>Terrain and maps:</strong> the app downloads the grid squares ("tiles") of the area where you are or that you are looking at, which reveals that area approximately (a few kilometres).</li>
+  </ul>
+  These requests carry nothing that identifies you; only, like any internet connection, your phone's IP address.</li>
+<li><strong>My position for emergencies:</strong> shows your coordinates on screen. They only leave the phone if you tap "Share", and only to the app you choose.</li>
+</ul>
+
+<h2>Camera and sensors</h2>
+<ul>
+<li>The camera is only used in the horizon's camera mode, to overlay the landscape. <strong>No photos or video are recorded or saved.</strong></li>
+<li>The compass and motion sensors are used to know where the phone is pointing. Their data never leaves the phone.</li>
+</ul>
+
+<h2>Permissions the app asks for</h2>
+<table>
+<thead><tr><th>Permission</th><th>What for</th></tr></thead>
+<tbody>
+<tr><td>Location (precise and approximate)</td><td>Distance and direction to your places, horizon from where you are, guidance and recording</td></tr>
+<tr><td>Background location and foreground service (Android)</td><td>Keep recording or guiding with the screen off, only during a session you start</td></tr>
+<tr><td>Notifications (Android 13 or later)</td><td>The ongoing notification of that session. If you deny it, the session still works</td></tr>
+<tr><td>Camera</td><td>Horizon camera mode, without recording or saving images</td></tr>
+</tbody>
+</table>
+<p>The app does not ask for access to your photos, files, contacts or microphone. FarSights sends no push notifications or ads.</p>
+
+<h2>Files you open or share</h2>
+<ul>
+<li>FarSights appears in the "Open with" menu for GPX, KML, XML and generic files (that is how many downloaded <code>.gpx</code> files arrive). It only reads the file you choose, asks before importing it and reads no other file on your phone.</li>
+<li>Tracks, places and positions you export or share only leave the phone towards the app you pick in the share menu.</li>
+</ul>
+
+<h2>Crash reports (Sentry)</h2>
+<ul>
+<li>If the app fails, it sends an error report to Sentry (Functional Software, Inc.), hosted in the European Union, so it can be fixed.</li>
+<li>The report includes the error, the screen where it happened, the phone model and the system and app versions. <strong>Before sending it, the app removes coordinates, file paths and other personal data.</strong> It does not include your places or tracks.</li>
+<li>Sentry receives the connection's IP address, like any server. FarSights does not use it to identify you.</li>
+</ul>
+
+<h2>Usage statistics (PostHog)</h2>
+<ul>
+<li><strong>Only if you agree</strong> in the notice shown the first time you open the app. You can change it at any time in the menu → "Usage statistics".</li>
+<li>Anonymous events are sent: screens opened, features used (for example "track imported" or "area downloaded") and app open and close. They carry a random installation identifier, the phone maker and model, the system and app versions, the language and the time zone.</li>
+<li><strong>They do not include your location or the names of your places.</strong> No person profile is created and no sessions or screens are recorded. The app asks PostHog not to use your IP to work out where you are.</li>
+<li>They are received by PostHog, Inc. on its servers in the <strong>United States</strong>. This is an international transfer outside the European Economic Area, covered by the European Commission's standard contractual clauses included in PostHog's data processing agreement.</li>
+</ul>
+
+<h2>External services the app queries</h2>
+<p>Like any internet server, they all receive your phone's IP address, besides what the table says. Each has its own privacy policy.</p>
+<table>
+<thead><tr><th>Service</th><th>What for</th><th>What it receives</th></tr></thead>
+<tbody>
+<tr><td>Google Maps (Google LLC)</td><td>Base map (can be turned off in the map layers)</td><td>The map area you view, and the technical data its own SDK collects</td></tr>
+<tr><td>Instituto Geográfico Nacional (Spain) and OpenTopoMap</td><td>Map layers and offline areas</td><td>Tiles of the area</td></tr>
+<tr><td>AWS Terrain Tiles (Amazon Web Services)</td><td>Terrain for the horizon, altitudes and offline areas</td><td>Tiles of the area</td></tr>
+<tr><td>OpenStreetMap, Overpass servers (<code>overpass-api.de</code> and, if it fails, <code>overpass.kumi.systems</code> and <code>overpass.private.coffee</code>)</td><td>Peak names and heights; buildings if you turn on that horizon layer</td><td>The point's coordinates (your position on the horizon, or the map centre) and a radius</td></tr>
+<tr><td>OpenStreetMap, Nominatim</td><td>Search peaks by name</td><td>The text you search and the map area, only when you tap "Search OpenStreetMap"</td></tr>
+</tbody>
+</table>
+
+<h2>Legal basis and retention</h2>
+<ul>
+<li><strong>App features and external services:</strong> necessary to provide what you ask for (maps, terrain, peaks).</li>
+<li><strong>Crash reports:</strong> legitimate interest in the app working without failures. They are anonymous and deleted automatically when Sentry's retention period ends.</li>
+<li><strong>Usage statistics:</strong> your consent, which you can withdraw at any time in the app. They are deleted automatically when PostHog's retention period ends.</li>
+</ul>
+
+<h2>Your rights</h2>
+<p>Your places, tracks and settings are only on your phone: you can delete them in the app or by uninstalling it. For crash reports and statistics you can request access, deletion or objection by writing to <a href="mailto:madelatosoftware@gmail.com">madelatosoftware@gmail.com</a>; since they are anonymous, we may need details of your phone (model and approximate date) to find them. You can also complain to your data protection authority; in Spain, the Agencia Española de Protección de Datos (<a href="https://www.aepd.es">www.aepd.es</a>).</p>
+
+<h2>Children</h2>
+<p>FarSights is not directed at children under 13 and does not knowingly collect their data.</p>
+
+<h2>Changes to this policy</h2>
+<p>If the app changes what it does with data, this page and its date will be updated.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:madelatosoftware@gmail.com">madelatosoftware@gmail.com</a></p>
+</main>
+</body>
+</html>
