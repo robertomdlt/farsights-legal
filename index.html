@@ -13,7 +13,7 @@
 <p class="lang"><a href="en.html" hreflang="en">English</a></p>
 
 <h1>Política de privacidad de FarSights</h1>
-<p class="meta">Última actualización: 6 de octubre de 2026</p>
+<p class="meta">Última actualización: 13 de octubre de 2026</p>
 
 <p>FarSights es una app para ver, guardar y llegar a lugares de montaña. Esta política explica qué datos usa, para qué y con quién se comparten.</p>
 
@@ -33,7 +33,7 @@
 <h2>Ubicación</h2>
 <ul>
 <li>La app usa tu ubicación para calcular la distancia y la dirección a tus lugares, dibujar el horizonte desde donde estás, guiarte y grabar rutas.</li>
-<li><strong>En segundo plano</strong> (solo Android): únicamente mientras grabas o sigues una ruta que tú has iniciado. Android muestra una notificación fija mientras tanto.</li>
+<li><strong>Con la pantalla apagada</strong> (solo Android): únicamente mientras grabas o sigues una ruta que tú has iniciado con la app abierta, mediante un servicio en primer plano. Android muestra una notificación fija mientras tanto. La app no pide el permiso de ubicación «todo el tiempo».</li>
 <li>FarSights no tiene servidores propios: tu ubicación no se guarda fuera de tu móvil. Pero para funcionar, la app pide datos a los servicios externos de la tabla de más abajo, y algunas de esas peticiones dicen dónde estás:
   <ul>
   <li><strong>Horizonte:</strong> al abrirlo, la app envía las coordenadas de tu posición a OpenStreetMap (servidores Overpass) para obtener las cumbres de alrededor. El resultado se guarda en el móvil durante 30 días, así que no se repite cada vez.</li>
@@ -54,7 +54,7 @@
 <thead><tr><th>Permiso</th><th>Para qué</th></tr></thead>
 <tbody>
 <tr><td>Ubicación (precisa y aproximada)</td><td>Distancia y dirección a tus lugares, horizonte desde donde estás, guía y grabación</td></tr>
-<tr><td>Ubicación en segundo plano y servicio en primer plano (Android)</td><td>Seguir grabando o guiando con la pantalla apagada, solo durante una sesión que tú inicias</td></tr>
+<tr><td>Servicio en primer plano de ubicación (Android)</td><td>Seguir grabando o guiando con la pantalla apagada, solo durante una sesión que tú inicias</td></tr>
 <tr><td>Notificaciones (Android 13 o posterior)</td><td>La notificación fija de esa sesión. Si lo deniegas, la sesión funciona igual</td></tr>
 <tr><td>Cámara</td><td>Modo cámara del horizonte, sin grabar ni guardar imágenes</td></tr>
 </tbody>
@@ -89,11 +89,12 @@
 <tbody>
 <tr><td>Google Maps (Google LLC)</td><td>Mapa base (se puede desactivar en las capas del mapa)</td><td>La zona del mapa que ves, y los datos técnicos que recoge su propio SDK</td></tr>
 <tr><td>Instituto Geográfico Nacional (España) y OpenTopoMap</td><td>Capas de mapa y zonas sin conexión</td><td>Teselas de la zona</td></tr>
-<tr><td>AWS Terrain Tiles (Amazon Web Services)</td><td>Relieve para el horizonte, las alturas y las zonas sin conexión</td><td>Teselas de la zona</td></tr>
+<tr><td>AWS Terrain Tiles (Amazon Web Services)</td><td>Relieve para el horizonte, la maqueta de la Brújula, las alturas y las zonas sin conexión</td><td>Teselas de la zona</td></tr>
 <tr><td>OpenStreetMap, servidores Overpass (<code>overpass-api.de</code> y, si falla, <code>overpass.kumi.systems</code> y <code>overpass.private.coffee</code>)</td><td>Nombres y alturas de las cumbres; edificios si activas esa capa del horizonte</td><td>Las coordenadas del punto (tu posición en el horizonte, o el centro del mapa) y un radio</td></tr>
 <tr><td>OpenStreetMap, Nominatim</td><td>Buscar cumbres por nombre</td><td>El texto que buscas y la zona del mapa, solo al pulsar «Buscar en OpenStreetMap»</td></tr>
 </tbody>
 </table>
+<p><strong>Terrenos de caza (opcional, apagado por defecto).</strong> Si activas la capa «Terrenos de caza» en el Mapa, la app pide las imágenes de los cotos de la zona que estás viendo a los servidores públicos de las comunidades autónomas que hay en esa zona (a veces también a las vecinas): Junta de Andalucía, Gobierno de Aragón, Principado de Asturias, Junta de Castilla y León, Generalitat de Catalunya, Comunidad de Madrid, Generalitat Valenciana, Junta de Extremadura, Gobierno de Navarra, Gobierno de La Rioja y Diputación Foral de Álava. Al tocar un punto del mapa con la capa activa, la app envía las coordenadas de ese punto al servidor de esa comunidad para saber qué coto hay allí; si el punto está cerca de una frontera autonómica, puede enviarse a los servidores de las dos comunidades. No se envía ningún otro dato tuyo, salvo la dirección IP y, en el servicio de Cataluña, el identificador de la app («FarSights/1.0»).</p>
 
 <h2>Base legal y conservación</h2>
 <ul>
