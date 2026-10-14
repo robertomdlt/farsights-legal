@@ -13,7 +13,7 @@
 <p class="lang"><a href="en.html" hreflang="en">English</a></p>
 
 <h1>Política de privacidad de FarSights</h1>
-<p class="meta">Última actualización: 13 de octubre de 2026</p>
+<p class="meta">Última actualización: 14 de octubre de 2026</p>
 
 <p>FarSights es una app para ver, guardar y llegar a lugares de montaña. Esta política explica qué datos usa, para qué y con quién se comparten.</p>
 
@@ -25,7 +25,8 @@
 <h2>Datos que se quedan en tu móvil</h2>
 <ul>
 <li><strong>Tus lugares, categorías, tracks, grabaciones y zonas sin conexión.</strong> Se guardan en el almacenamiento de la app. FarSights no los envía a ningún servidor.</li>
-<li><strong>Ajustes</strong>: idioma, capas del mapa y preferencias del horizonte y de las rutas.</li>
+<li><strong>Ajustes</strong>: idioma, capas del mapa y preferencias del horizonte, de las rutas y de la Brújula.</li>
+<li><strong>Descargas en la caché de la app.</strong> Para no volver a descargarlo, la app guarda en la caché del móvil lo que ha descargado para los mapas y la Brújula (teselas del relieve, edificios, ríos y lagos, y zonas urbanizadas), junto con la zona a la que pertenece. El sistema puede vaciar esa caché cuando lo necesite, y al desinstalar la app desaparece con ella.</li>
 <li><strong>Copia de seguridad de Android.</strong> Si tienes activada la copia de seguridad de tu cuenta de Google, Android puede incluir en ella tus lugares, tracks, grabaciones y ajustes (cifrados y en tu cuenta), para recuperarlos en un móvil nuevo. Las zonas sin conexión no entran en la copia. Esa copia la hace el sistema, no FarSights, y puedes desactivarla en los ajustes de Android.</li>
 <li><strong>Si desinstalas la app</strong>, todo se borra del móvil.</li>
 </ul>
@@ -37,6 +38,7 @@
 <li>FarSights no tiene servidores propios: tu ubicación no se guarda fuera de tu móvil. Pero para funcionar, la app pide datos a los servicios externos de la tabla de más abajo, y algunas de esas peticiones dicen dónde estás:
   <ul>
   <li><strong>Horizonte:</strong> al abrirlo, la app envía las coordenadas de tu posición a OpenStreetMap (servidores Overpass) para obtener las cumbres de alrededor. El resultado se guarda en el móvil durante 30 días, así que no se repite cada vez.</li>
+  <li><strong>Brújula:</strong> mientras está abierta, la app envía a OpenStreetMap (servidores Overpass) el centro de la maqueta, que es tu posición redondeada a unos 11 m, y un radio algo mayor que el de la maqueta, para dibujar en ella los ríos y lagos, los edificios cercanos (maqueta de 1 km o menos) y las zonas urbanizadas de más lejos. Lo vuelve a pedir cuando te alejas una parte del radio. Lo que llega se guarda en el móvil durante 30 días. El sol y la luna del astrolabio se calculan en el móvil, sin enviar nada.</li>
   <li><strong>Relieve y mapas:</strong> la app descarga las cuadrículas («teselas») de la zona donde estás o que estás mirando, lo que revela esa zona de forma aproximada (unos kilómetros).</li>
   </ul>
   Estas peticiones no llevan ningún dato que te identifique; solo, como cualquier conexión a internet, la dirección IP de tu móvil.</li>
@@ -90,7 +92,7 @@
 <tr><td>Google Maps (Google LLC)</td><td>Mapa base (se puede desactivar en las capas del mapa)</td><td>La zona del mapa que ves, y los datos técnicos que recoge su propio SDK</td></tr>
 <tr><td>Instituto Geográfico Nacional (España) y OpenTopoMap</td><td>Capas de mapa y zonas sin conexión</td><td>Teselas de la zona</td></tr>
 <tr><td>AWS Terrain Tiles (Amazon Web Services)</td><td>Relieve para el horizonte, la maqueta de la Brújula, las alturas y las zonas sin conexión</td><td>Teselas de la zona</td></tr>
-<tr><td>OpenStreetMap, servidores Overpass (<code>overpass-api.de</code> y, si falla, <code>overpass.kumi.systems</code> y <code>overpass.private.coffee</code>)</td><td>Nombres y alturas de las cumbres; edificios si activas esa capa del horizonte</td><td>Las coordenadas del punto (tu posición en el horizonte, o el centro del mapa) y un radio</td></tr>
+<tr><td>OpenStreetMap, servidores Overpass (<code>overpass-api.de</code> y, si falla, <code>overpass.kumi.systems</code> y <code>overpass.private.coffee</code>)</td><td>Nombres y alturas de las cumbres; edificios si activas esa capa del horizonte; ríos, lagos, edificios y zonas urbanizadas de la maqueta de la Brújula</td><td>Las coordenadas del punto (tu posición en el horizonte, el centro del mapa o el centro de la maqueta de la Brújula, redondeado a unos 11 m) y un radio</td></tr>
 <tr><td>OpenStreetMap, Nominatim</td><td>Buscar cumbres por nombre</td><td>El texto que buscas y la zona del mapa, solo al pulsar «Buscar en OpenStreetMap»</td></tr>
 </tbody>
 </table>
