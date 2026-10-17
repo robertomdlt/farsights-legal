@@ -13,7 +13,7 @@
 <p class="lang"><a href="en.html" hreflang="en">English</a></p>
 
 <h1>Política de privacidad de FarSights</h1>
-<p class="meta">Última actualización: 14 de octubre de 2026</p>
+<p class="meta">Última actualización: 17 de octubre de 2026</p>
 
 <p>FarSights es una app para ver, guardar y llegar a lugares de montaña. Esta política explica qué datos usa, para qué y con quién se comparten.</p>
 
@@ -39,6 +39,7 @@
   <ul>
   <li><strong>Horizonte:</strong> al abrirlo, la app envía las coordenadas de tu posición a OpenStreetMap (servidores Overpass) para obtener las cumbres de alrededor. El resultado se guarda en el móvil durante 30 días, así que no se repite cada vez.</li>
   <li><strong>Brújula:</strong> mientras está abierta, la app envía a OpenStreetMap (servidores Overpass) el centro de la maqueta, que es tu posición redondeada a unos 11 m, y un radio algo mayor que el de la maqueta, para dibujar en ella los ríos y lagos, los edificios cercanos (maqueta de 1 km o menos) y las zonas urbanizadas de más lejos. Lo vuelve a pedir cuando te alejas una parte del radio. Lo que llega se guarda en el móvil durante 30 días. El sol y la luna del astrolabio se calculan en el móvil, sin enviar nada.</li>
+  <li><strong>Refugios, fuentes y aparcamientos del Mapa</strong> (opcional): si activas esa capa, la app envía a OpenStreetMap (servidores Overpass) el centro del mapa que estás mirando, redondeado a 1 km, y un radio de unos 45 km (10 km para los aparcamientos). Al descargar una zona sin conexión, pide también los de esa zona. Lo que llega se guarda en el móvil durante 30 días.</li>
   <li><strong>Relieve y mapas:</strong> la app descarga las cuadrículas («teselas») de la zona donde estás o que estás mirando, lo que revela esa zona de forma aproximada (unos kilómetros).</li>
   </ul>
   Estas peticiones no llevan ningún dato que te identifique; solo, como cualquier conexión a internet, la dirección IP de tu móvil.</li>
@@ -84,6 +85,13 @@
 <li>Los recibe PostHog, Inc. en sus servidores de <strong>Estados Unidos</strong>. Es una transferencia internacional fuera del Espacio Económico Europeo, amparada en las cláusulas contractuales tipo de la Comisión Europea incluidas en el acuerdo de tratamiento de datos de PostHog.</li>
 </ul>
 
+<h2>Sugerencias y contacto</h2>
+<ul>
+<li>Desde «Sugerencias y contacto» (en la portada de la app y en el menú de Mis lugares) puedes escribirnos un correo. La app solo lo prepara en tu app de correo: no sale nada del móvil hasta que tú lo envías, y antes puedes leerlo y cambiarlo entero.</li>
+<li>El correo lleva al final la versión de la app, el fabricante y el modelo del móvil, la versión del sistema y el idioma de la app, para saber dónde mirar. <strong>Nunca tu ubicación ni tus lugares.</strong></li>
+<li>Llega a <a href="mailto:madelatosoftware@gmail.com">madelatosoftware@gmail.com</a> (una cuenta de Gmail, de Google) con tu dirección de correo, como cualquier correo que envías.</li>
+</ul>
+
 <h2>Servicios externos que consulta la app</h2>
 <p>Todos reciben, como cualquier servidor de internet, la dirección IP de tu móvil, además de lo que indica la tabla. Cada uno tiene su propia política de privacidad.</p>
 <table>
@@ -92,7 +100,7 @@
 <tr><td>Google Maps (Google LLC)</td><td>Mapa base (se puede desactivar en las capas del mapa)</td><td>La zona del mapa que ves, y los datos técnicos que recoge su propio SDK</td></tr>
 <tr><td>Instituto Geográfico Nacional (España) y OpenTopoMap</td><td>Capas de mapa y zonas sin conexión</td><td>Teselas de la zona</td></tr>
 <tr><td>AWS Terrain Tiles (Amazon Web Services)</td><td>Relieve para el horizonte, la maqueta de la Brújula, las alturas y las zonas sin conexión</td><td>Teselas de la zona</td></tr>
-<tr><td>OpenStreetMap, servidores Overpass (<code>overpass-api.de</code> y, si falla, <code>overpass.kumi.systems</code> y <code>overpass.private.coffee</code>)</td><td>Nombres y alturas de las cumbres; edificios si activas esa capa del horizonte; ríos, lagos, edificios y zonas urbanizadas de la maqueta de la Brújula</td><td>Las coordenadas del punto (tu posición en el horizonte, el centro del mapa o el centro de la maqueta de la Brújula, redondeado a unos 11 m) y un radio</td></tr>
+<tr><td>OpenStreetMap, servidores Overpass (<code>overpass-api.de</code> y, si falla, <code>overpass.kumi.systems</code> y <code>overpass.private.coffee</code>)</td><td>Nombres y alturas de las cumbres; edificios si activas esa capa del horizonte; ríos, lagos, edificios y zonas urbanizadas de la maqueta de la Brújula; refugios, fuentes y aparcamientos del Mapa si activas esa capa, y los de cada zona que descargas</td><td>Las coordenadas del punto (tu posición en el horizonte, el centro del mapa o el centro de la maqueta de la Brújula, redondeado a unos 11 m) y un radio; para los refugios, fuentes y aparcamientos, el centro del mapa redondeado a 1 km y un radio de unos 45 km (10 km para los aparcamientos), o la zona que descargas</td></tr>
 <tr><td>OpenStreetMap, Nominatim</td><td>Buscar cumbres por nombre</td><td>El texto que buscas y la zona del mapa, solo al pulsar «Buscar en OpenStreetMap»</td></tr>
 </tbody>
 </table>
