@@ -13,7 +13,7 @@
 <p class="lang"><a href="./" hreflang="es">Español</a></p>
 
 <h1>FarSights privacy policy</h1>
-<p class="meta">Last updated: 9 November 2026</p>
+<p class="meta">Last updated: 10 November 2026</p>
 
 <p>FarSights is an app to see, save and reach places in the mountains. This policy explains what data it uses, why, and who it is shared with.</p>
 
@@ -39,7 +39,7 @@
   <ul>
   <li><strong>Horizon:</strong> when you open it, the app requests from jsDelivr the peak files for the 1° grid squares (about 100 km) around your position; those requests do not carry your coordinates, only which squares are requested. Outside the areas those files cover, or if they fail, it sends the coordinates of your position to OpenStreetMap (Overpass servers). The result is kept on the phone for 30 days, so it is not repeated every time.</li>
   <li><strong>Compass:</strong> while it is open, the app sends OpenStreetMap (Overpass servers) the centre of the terrain model, which is your position rounded to about 11 m, and a radius slightly larger than the model's, to draw rivers and lakes, nearby buildings (models of 1 km or less) and built-up areas further away. It asks again when you move a part of the radius away. What arrives is kept on the phone for 30 days. The sun and moon of the astrolabe are computed on the phone, without sending anything.</li>
-  <li><strong>Huts, springs and parking on the Map</strong> (optional): if you turn on that layer, the app sends OpenStreetMap (Overpass servers) the centre of the map you are looking at, rounded to 1 km, and a radius of about 45 km (10 km for parking). When you download an offline area, it also asks for those of that area. What arrives is kept on the phone for 30 days.</li>
+  <li><strong>Huts, springs and parking on the Map</strong> (optional): if you turn on that layer, the app requests from jsDelivr the hut and spring files for the 1° grid squares (about 100 km) touching the area of about 45 km around the map centre, rounded to 1 km; those requests do not carry coordinates, only which squares are requested. For parking (and for huts and springs if those files are missing or fail), it sends OpenStreetMap (Overpass servers) the map centre, rounded to 1 km, and a radius of about 45 km (10 km for parking). When you download an offline area, it also asks for those of that area. What arrives is kept on the phone for 30 days.</li>
   <li><strong>Terrain and maps:</strong> the app downloads the grid squares ("tiles") of the area where you are or that you are looking at, which reveals that area approximately (a few kilometres).</li>
   </ul>
   These requests carry nothing that identifies you; only, like any internet connection, your phone's IP address.</li>
@@ -101,7 +101,7 @@
 <tr><td>Instituto Geográfico Nacional (Spain) and OpenTopoMap</td><td>Map layers and offline areas</td><td>Tiles of the area</td></tr>
 <tr><td>AWS Terrain Tiles (Amazon Web Services)</td><td>Terrain for the horizon, the Compass terrain model, altitudes and offline areas</td><td>Tiles of the area</td></tr>
 <tr><td>OpenStreetMap, Overpass servers (<code>overpass-api.de</code> and, if it fails, <code>overpass.kumi.systems</code> and <code>overpass.private.coffee</code>)</td><td>Peak names and heights; buildings if you turn on that horizon layer; rivers, lakes, buildings and built-up areas of the Compass terrain model; huts, springs and parking on the Map if you turn on that layer, and those of each area you download</td><td>The point's coordinates (your position on the horizon, the map centre or the centre of the Compass terrain model, rounded to about 11 m) and a radius; for huts, springs and parking, the map centre rounded to 1 km and a radius of about 45 km (10 km for parking), or the area you download</td></tr>
-<tr><td>jsDelivr (<code>cdn.jsdelivr.net</code>), which serves the public files of the <a href="https://github.com/robertomdlt/farsights-datos">farsights-datos</a> repository on GitHub</td><td>Peak names and heights (OpenStreetMap data prepared in advance)</td><td>Which 1° × 1° grid squares (about 100 km across) are requested around the point; not the exact coordinates</td></tr>
+<tr><td>jsDelivr (<code>cdn.jsdelivr.net</code>), which serves the public files of the <a href="https://github.com/robertomdlt/farsights-datos">farsights-datos</a> and <a href="https://github.com/robertomdlt/farsights-puntos">farsights-puntos</a> repositories on GitHub</td><td>Peak names and heights, and the huts and springs of the Map layer and of each area you download (OpenStreetMap data prepared in advance)</td><td>Which 1° × 1° grid squares (about 100 km across) are requested around the point; not the exact coordinates</td></tr>
 <tr><td>OpenStreetMap, Nominatim</td><td>Search peaks by name</td><td>The text you search and the map area, only when you tap "Search OpenStreetMap"</td></tr>
 </tbody>
 </table>
