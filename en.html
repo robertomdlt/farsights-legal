@@ -13,7 +13,7 @@
 <p class="lang"><a href="./" hreflang="es">Español</a></p>
 
 <h1>FarSights privacy policy</h1>
-<p class="meta">Last updated: 10 November 2026</p>
+<p class="meta">Last updated: 16 November 2026</p>
 
 <p>FarSights is an app to see, save and reach places in the mountains. This policy explains what data it uses, why, and who it is shared with.</p>
 
@@ -98,7 +98,7 @@
 <thead><tr><th>Service</th><th>What for</th><th>What it receives</th></tr></thead>
 <tbody>
 <tr><td>Google Maps (Google LLC)</td><td>Base map (can be turned off in the map layers)</td><td>The map area you view, and the technical data its own SDK collects</td></tr>
-<tr><td>Instituto Geográfico Nacional (Spain) and OpenTopoMap</td><td>Map layers and offline areas</td><td>Tiles of the area</td></tr>
+<tr><td>Instituto Geográfico Nacional (Spain) and OpenTopoMap</td><td>Map layers and offline areas (the IGN map, only in Spain, or the OpenTopoMap one, anywhere)</td><td>Tiles of the area; when you download an area with the OpenTopoMap map, also the app's name and version and the system (Android or iOS), so their server knows who is downloading; nothing about you</td></tr>
 <tr><td>AWS Terrain Tiles (Amazon Web Services)</td><td>Terrain for the horizon, the Compass terrain model, altitudes and offline areas</td><td>Tiles of the area</td></tr>
 <tr><td>OpenStreetMap, Overpass servers (<code>overpass-api.de</code> and, if it fails, <code>overpass.kumi.systems</code> and <code>overpass.private.coffee</code>)</td><td>Peak names and heights; buildings if you turn on that horizon layer; rivers, lakes, buildings and built-up areas of the Compass terrain model; huts, springs and parking on the Map if you turn on that layer, and those of each area you download</td><td>The point's coordinates (your position on the horizon, the map centre or the centre of the Compass terrain model, rounded to about 11 m) and a radius; for huts, springs and parking, the map centre rounded to 1 km and a radius of about 45 km (10 km for parking), or the area you download</td></tr>
 <tr><td>jsDelivr (<code>cdn.jsdelivr.net</code>), which serves the public files of the <a href="https://github.com/robertomdlt/farsights-datos">farsights-datos</a> and <a href="https://github.com/robertomdlt/farsights-puntos">farsights-puntos</a> repositories on GitHub</td><td>Peak names and heights, and the huts and springs of the Map layer and of each area you download (OpenStreetMap data prepared in advance)</td><td>Which 1° × 1° grid squares (about 100 km across) are requested around the point; not the exact coordinates</td></tr>
